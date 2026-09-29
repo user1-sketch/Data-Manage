@@ -1,0 +1,21 @@
+timezone: Asia/Shanghai
+verification_status: pending_ds_review
+rules:
+  - {workflow: monitor_dawn, rule: account_flag, due_after: '10:20'}
+  - {workflow: monitor_dawn, rule: layer_consistency, due_after: '10:20'}
+  - {workflow: monitor_dawn, rule: order_completeness, due_after: '10:20'}
+  - {workflow: monitor_dawn, rule: product_completeness, due_after: '10:20'}
+  - {workflow: monitor_dawn, rule: product_timeliness, due_after: '10:20'}
+  - {workflow: monitor_dawn, rule: revoke_rebuild, due_after: '10:20'}
+  - {workflow: monitor_dawn, rule: selfop_qc_completeness, due_after: '10:20'}
+  - {workflow: monitor_hourly, rule: data_arrival, due_after: '01:15'}
+  - {workflow: monitor_hourly, rule: order_timeliness, due_after: '01:15'}
+  - {workflow: monitor_noon, rule: coverage, due_after: '12:20'}
+  - {workflow: monitor_noon, rule: key_fields, due_after: '12:20'}
+  - {workflow: monitor_noon, rule: nonempty_rows, due_after: '12:20'}
+  - {workflow: extended_checks, rule: product_global_volume, due_after: '10:50'}
+  - {workflow: extended_checks, rule: schema_drift, due_after: '10:50'}
+notes: >-
+  以上为脚本 RULE/WORKFLOW 与 2026-07-29 catalog cron 快照推导的候选清单。
+  须核实 DS 当前启停、执行时间、容忍延迟和适用日历，再将 verification_status 改为 verified。
+  未核实前 API 不宣称完整覆盖率。

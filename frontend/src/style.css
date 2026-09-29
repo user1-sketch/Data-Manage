@@ -1,0 +1,25 @@
+:root { font-family: Inter, "Microsoft YaHei", "PingFang SC", sans-serif; color: #1c2a3a; background: #f3f6fa; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+.shell { min-height: 100vh; }
+.sidebar { border-right: 1px solid #e6ecf3; box-shadow: 2px 0 16px #24476c0a; }
+.brand { display: flex; align-items: center; gap: 11px; height: 72px; padding: 0 22px; font-size: 17px; font-weight: 700; color: #17385f; }
+.brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; color: white; background: linear-gradient(140deg, #1b81b8, #1f4a91); }
+.sidebar .ant-menu { border-inline-end: 0 !important; padding: 8px; }
+.sidebar-foot { position: absolute; bottom: 24px; left: 22px; font-size: 12px; color: #98a9ba; }
+.topbar { height: 64px; line-height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; background: #fff; border-bottom: 1px solid #e8eef5; }
+.content { padding: 28px; max-width: 1720px; width: 100%; margin: 0 auto; }
+.page-title { margin-bottom: 20px; }
+.page-title h2 { margin: 0 0 5px !important; color: #1a3554; }
+.content .ant-alert { margin-bottom: 16px; }
+.content .ant-card { margin-bottom: 18px; border: 1px solid #e6edf5; box-shadow: 0 4px 18px #14385c08; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.stat-grid .ant-card { min-height: 118px; }
+.two-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.filter-bar { display: flex; gap: 10px; align-items: center; margin-bottom: 16px; }
+.center { display: flex; justify-content: center; padding: 80px 0; }
+.card-action { margin-top: 18px; }
+.graph-canvas { height: calc(100vh - 260px); min-height: 560px; border: 1px solid #edf1f7; border-radius: 8px; }
+.json-panel { max-height: 70vh; overflow: auto; padding: 18px; margin: 0; background: #f7f9fc; border-radius: 8px; color: #31445d; font: 12px/1.6 Consolas, "Microsoft YaHei", monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 950px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } .two-columns { grid-template-columns: 1fr; } .content { padding: 18px; } }
+@media (max-width: 600px) { .stat-grid { grid-template-columns: 1fr; } .topbar { padding: 0 14px; } }

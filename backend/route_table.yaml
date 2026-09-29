@@ -1,0 +1,23 @@
+version: '1.0'
+fields:
+  layer: catalog
+  purpose: catalog
+  upstream: catalog
+  downstream: catalog
+  key_fields: catalog
+  grain: catalog
+  unique_key: catalog
+  version_column: catalog
+  update: catalog
+  notes: catalog
+  status: catalog
+  column: detail
+  type: detail
+  desc: detail
+  metric: foundation
+  glossary: foundation
+  rename_history: foundation
+  engine: clickhouse
+  partition: clickhouse
+  order_by: clickhouse
+degradation_whitelist: []

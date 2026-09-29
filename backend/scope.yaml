@@ -1,0 +1,11 @@
+discover_databases: []
+exclude_exact:
+  - SmartData.meta_schema_drift_di
+  - SmartData.meta_schema_drift_run
+exclude_name_patterns:
+  - '^tmp_'
+  - '_bak_'
+  - '_canon_tmp'
+  - '_test$'
+notes: >-
+  Catalog 中已声明的库始终扫描。额外对象仅作为发现候选；排除规则需要在基线报告中留痕。
